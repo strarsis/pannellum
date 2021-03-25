@@ -300,6 +300,7 @@
     text-align: center;
     color: #fff;
     table-layout: fixed;
+    z-index: 1;
 }
 
 .pnlm-info-box a, .pnlm-author-box a {
@@ -316,6 +317,25 @@
 
 .pnlm-error-msg {
     display: none;
+}
+
+.pnlm-interaction-msg {
+    display: none;
+    pointer-events: none;
+    background: rgba(0,0,0,0.7);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.pnlm-outline {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 2px;
 }
 
 .pnlm-about-msg {
@@ -352,7 +372,7 @@
     cursor: default;
     vertical-align: middle;
     top: 0;
-    z-index: 1;
+    z-index: 0;
 }
 .pnlm-hotspot {
     height: 26px;
